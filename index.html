@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tote-ally Iconic — Made to be seen.</title>
+  <meta name="description" content="Tote-ally Iconic: tote bags, hampers, charms, bouquets, jewellery, keychains and bracelets.">
+  <meta name="theme-color" content="#641C32">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@400;500&family=Special+Elite&family=Gochi+Hand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+   
+
+(function () {
+  var d = document.documentElement;
+  d.classList.add('js');
+
+  var skip = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if (/[?&]intro/.test(location.search)) {
+    skip = false;
+  }
+
+  if (skip) {
+    d.classList.add('no-intro');
+  }
+})();
+</script>
+
+</head>
+<body>
+
+<!-- ============ CURTAIN INTRO ============ -->
+<div id="intro" class="intro" role="region" aria-label="Opening animation">
+  <div class="stage" aria-hidden="true">
+    <div class="brand-reveal">
+      <div class="brand-name">TOTE-ALLY ICONIC</div>
+      <div class="brand-tag">Made to be seen.</div>
+    </div>
+    <div id="pedestals" class="pedestals"></div>
+  </div>
+  <div class="curtain left" aria-hidden="true"></div>
+  <div class="curtain right" aria-hidden="true"></div>
+  <div class="rod" aria-hidden="true"></div>
+  <p class="teaser">Something iconic is about to unfold…</p>
+  <div id="sparkles" class="sparkles" aria-hidden="true"></div>
+  <div class="intro-controls">
+    <button id="sound" type="button" aria-pressed="false">Sound: off</button>
+    <button id="skip" type="button">Skip intro</button>
+  </div>
+</div>
+
+<!-- ============ SITE ============ -->
+<header class="site-header">
+  <a class="logo" href="#top">Tote-ally <em>Iconic</em></a>
+  <nav class="nav" aria-label="Main">
+    <a href="#showcase">Showcase</a>
+    <a href="#collections">Collections</a>
+    <a href="#story">Our Story</a>
+    <a href="#founders">Founders</a>
+    <a class="btn btn-small" href="#contact">Custom orders</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-text">
+      <p class="eyebrow">A small creative business</p>
+      <h1>Tote-ally <em>Iconic</em></h1>
+      <p class="hero-tag">Made to be seen.</p>
+      <p class="lead">Tote bags, hampers, charms, bouquets, jewellery, keychains and bracelets, designed to turn everyday things into statement pieces.</p>
+      <div class="actions">
+        <a class="btn" href="#showcase">Explore the showcase</a>
+        <a class="btn btn-ghost" href="#contact">Ask about a custom order</a>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <div class="arch">
+        <svg class="bow" viewBox="0 0 120 80"><path d="M60 40C40 5 5 5 8 38c2 28 40 14 52 2zM60 40C80 5 115 5 112 38c-2 28-40 14-52 2z" fill="#E8B7C5" stroke="#C58B91" stroke-width="2"/><circle cx="60" cy="40" r="9" fill="#C58B91"/><path d="M54 48 40 76M66 48l14 28" stroke="#C58B91" stroke-width="5" stroke-linecap="round"/></svg>
+        <span class="arch-text">Made to be seen.</span>
+      </div>
+      <i class="gem g1"></i><i class="gem g2"></i><i class="gem g3"></i>
+    </div>
+  </section>
+
+  <section id="showcase" class="section">
+    <div class="head reveal"><p class="eyebrow">The Showcase</p><h2>Our creations</h2><p>Each piece is a little statement. Browse what we make.</p></div>
+    <div id="product-grid" class="grid"></div>
+  </section>
+
+  <section id="collections" class="section dark">
+    <div class="head reveal"><p class="eyebrow light">Collections</p><h2>Find your kind of iconic</h2></div>
+    <div id="collection-grid" class="collections"></div>
+  </section>
+
+  <section id="story" class="section story">
+    <div class="head reveal"><p class="eyebrow">Our Story</p><h2>Two friends, one creative idea</h2></div>
+    <div class="story-body reveal">
+      <p class="pull">“We wanted our everyday things to look as special as they feel.”</p>
+      <div>
+        <p>Tote-ally Iconic began with two friends who love making things that get noticed. What started as a shared creative spark grew into a small brand built around bags, gifts and keepsakes with personality.</p>
+        
+    </div>
+  </section>
+
+  <section id="founders" class="section founders">
+  <div id="founder-names" class="founder-names"></div>
+
+  <figure class="founder-photo reveal">
+    <img src="images/founders.png" alt="Illustrated founders Khadija and Abhirami">
+  </figure>
+</section>
+
+  <section id="contact" class="section contact">
+    <div class="contact-card reveal">
+      <p class="eyebrow light">Custom Orders &amp; Contact</p>
+      <h2>Have something iconic in mind?</h2>
+      <p>Tell us what you'd like and we'll chat about making it. This is a showcase site, so orders and questions happen directly with us.</p>
+      <ul id="contact-list" class="contact-list"></ul>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="logo">Tote-ally <em>Iconic</em></div>
+  <p class="foot-tag">Made to be seen.</p>
+  <p class="small">© <span id="year"></span> Tote-ally Iconic · <a href="?intro">Replay intro</a></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
